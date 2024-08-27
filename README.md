@@ -20,6 +20,11 @@ git push
  CURRENT_TIMESTAMP l'heure de maintmnt
 
 
+ SELECT user.firstname, event.name FROM USER 
+INNER JOIN attendee ON attendee.idUser = user.ID 
+INNER JOIN event ON attendee.idEvent = event.ID 
+
+
 
 
 
